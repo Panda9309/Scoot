@@ -2,7 +2,7 @@
     & {
         width: 100%;
         background-image: url(./../../images/bg-hero.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         margin-bottom: 296px;
         z-index: 1;
@@ -20,6 +20,18 @@
     &__content {
         width: 500px;
         padding: 153px 775px 152px 165px;
+    }
+    &__content::after {
+        content: url(./../../images/arrow-line.svg);
+        position: absolute;
+        bottom: 200px;
+        left: 160px;
+    }
+    &__content::before {
+        content: url(./../../images/arrow.svg);
+        position: absolute;
+        right: 100px;
+        bottom: 70px;
     }
     &__wrapper {
         margin-left: 95px;
@@ -72,6 +84,15 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+        &__content::after {
+            content: "";
+        }
+        &__content::before {
+            content: url(./../../images/arrow.svg);
+            position: absolute;
+            left: -370px;
+            bottom: 290px;
         }
         &__wrapper {
             margin-left: 0;

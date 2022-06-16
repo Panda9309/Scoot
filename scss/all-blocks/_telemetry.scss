@@ -34,3 +34,48 @@
         border-radius: 50%;
     }
 }
+@media only screen and (max-width: 768px) {
+    .telemetry {
+        & {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin-bottom: 168px;
+        }
+        & + & {
+            margin-top: 160px;
+        }
+        &:nth-child(2n+2) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        &__wrapper {
+            width: 445px;
+            margin-top: 56px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__text {
+            width: 445px;
+            @include regular-text;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        &__subtext {
+            width: 445px;
+            @include main-text;
+            color: $dim-grey;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        &__btn {
+            padding: 14px 44.5px;
+            margin: 0 126px;
+        }
+        &__img {
+            border-radius: 50%;
+        }
+    }
+}

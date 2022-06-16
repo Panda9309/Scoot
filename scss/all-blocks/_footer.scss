@@ -44,3 +44,14 @@
         color: #E5ECF4;
     }
 }
+@media only screen and (max-width: 768px) {
+    .footer {
+        &__container{
+            padding-left: 40px;
+            padding-right: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
