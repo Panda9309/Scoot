@@ -434,6 +434,15 @@ img {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header {
   position: sticky;
   position: -webkit-sticky;
@@ -518,6 +527,8 @@ img {
   .header__container {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 39px;
+    padding-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -631,6 +642,61 @@ img {
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    background-image: url(./../../images/bg-hero-tab.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(./../../images/bg-hero-tab@2x.png);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__content {
+    width: 573px;
+    margin-left: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero__wrapper {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 .task {
   margin-bottom: 100px;
 }
@@ -701,6 +767,51 @@ img {
   font-style: normal;
   font-weight: 400;
   color: #939CAA;
+}
+
+@media only screen and (max-width: 768px) {
+  .task {
+    margin-bottom: 100px;
+  }
+  .task__container::before {
+    content: url(./../../images/vr-line.svg);
+    position: relative;
+    top: -4px;
+    left: 100px;
+  }
+  .task__list {
+    display: block;
+    margin-top: -450px;
+    margin-left: 190px;
+  }
+  .task__item {
+    width: 398px;
+  }
+  .task__item + .task__item {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .task__item:nth-child(3n+1)::after {
+    content: url(./../../images/locate-before.svg);
+    position: relative;
+    top: -645px;
+    left: 60px;
+    margin-right: 0;
+  }
+  .task__item:nth-child(3n+2)::after {
+    content: url(./../../images/scooter-before.svg);
+    position: relative;
+    top: -645px;
+    left: 60px;
+    margin-right: 0;
+  }
+  .task__item:nth-child(3n+3)::after {
+    content: url(./../../images/ride-before.svg);
+    position: relative;
+    top: -645px;
+    left: 60px;
+    margin-right: 0;
+  }
 }
 
 .telemetry {

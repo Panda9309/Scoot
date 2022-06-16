@@ -49,3 +49,51 @@
         color: #939CAA;
     }
 }
+
+// Responsive
+
+@media only screen and (max-width: 768px) {
+    .task {
+        margin-bottom: 100px;
+
+        &__container::before {
+            content: url(./../../images/vr-line.svg);
+            position: relative;
+            top: -4px;
+            left: 100px;
+        }
+        &__list {
+            display: block;
+            margin-top: -450px;
+            margin-left: 190px;
+        }
+        &__item {
+            width: 398px;
+        }
+        &__item + &__item {
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+        &__item:nth-child(3n+1)::after {
+            content: url(./../../images/locate-before.svg);
+            position: relative;
+            top: -645px;
+            left: 60px;
+            margin-right: 0;
+        }
+        &__item:nth-child(3n+2)::after {
+            content: url(./../../images/scooter-before.svg);
+            position: relative;
+            top: -645px;
+            left: 60px;
+            margin-right: 0;
+        }
+        &__item:nth-child(3n+3)::after {
+            content: url(./../../images/ride-before.svg);
+            position: relative;
+            top: -645px;
+            left: 60px;
+            margin-right: 0;
+        }
+    }
+}
