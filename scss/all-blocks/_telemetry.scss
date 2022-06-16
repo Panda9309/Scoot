@@ -1,6 +1,20 @@
 .telemetry {
+    & {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 168px;
+    }
+    & + & {
+        margin-top: 160px;
+    }
+    &:nth-child(2n+2) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     &__wrapper {
         width: 445px;
+        margin-right: 220px;
     }
     &__text {
         width: 445px;
@@ -17,7 +31,6 @@
         padding: 14px 44.5px;
     }
     &__img {
-        background-image: url(./../../images/telemetry-img.png);
-        width: 445px;
+        border-radius: 50%;
     }
 }

@@ -1,11 +1,22 @@
 .hero {
-    &__container {
+    & {
         width: 100%;
         background-image: url(./../../images/bg-hero.png);
         background-size: cover;
         background-repeat: no-repeat;
         margin-bottom: 296px;
+        z-index: 1;
     }
+    
+    // 2x Ratio 
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        & {
+            background-image: url(./../../images/bg-hero@2x.png);
+        }
+    }
+
     &__content {
         width: 500px;
         padding: 153px 775px 152px 165px;
