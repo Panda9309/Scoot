@@ -1,0 +1,90 @@
+.top-footer {
+    &__container {
+        width: 100%;
+        padding: 102px 860px 102px 165px;
+        background: #495567;
+    }
+    &__wrapper {
+        width: 1106px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        @include big-text;
+        color: #fff;
+        width: 415px;
+    }
+
+    // Download
+    &__download {
+        margin-left: 300px;
+        width: 359px;
+        display: flex;
+        justify-content: space-between;
+    }
+    // AppStore
+
+    &__appstore {
+        width: 159px;
+        background: #E5ECF4;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 11px;
+    }
+    &__content-appstore {
+        padding: 8px 16px 9px 11px;
+    }
+    &__aviable {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.4px;
+        color: #495567;
+    }
+    &__store {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.9px;
+        color: #495567;
+    }
+    
+    // Google Play 
+    
+    &__google-play {
+        width: 182px;
+        background: #E5ECF4;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content-google-play {
+        padding: 8px 16px 9px 11px;
+    }
+    &__get-it {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.4px;
+        color: #495567;
+    }
+    &__play {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.9px;
+        color: #495567;
+    }
+}
