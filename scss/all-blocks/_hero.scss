@@ -1,0 +1,35 @@
+.hero {
+    &__container {
+        width: 100%;
+        background-image: url(./../../images/bg-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 296px;
+    }
+    &__content {
+        width: 500px;
+        padding: 153px 775px 152px 165px;
+    }
+    &__wrapper {
+        margin-left: 95px;
+    }
+    &__heading {
+        width: 500px;
+        @include large-text;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    &__subheading {
+        @include normal-text;
+        font-weight: 400;
+        font-family: 'Lexend Deca';
+        width: 405px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        width: 180px;
+        padding: 14px 39px;
+        white-space: nowrap;
+    }
+}

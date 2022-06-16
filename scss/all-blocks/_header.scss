@@ -1,0 +1,35 @@
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #fff;
+    padding: 10px 0px;
+    top: 0;
+    z-index: 2;
+    
+    &__container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right-side {
+        width: 414px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        width: 249px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        @include normal-text;
+    }
+    &__btn {
+        padding: 14px 39px;
+    }
+}

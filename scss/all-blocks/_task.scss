@@ -1,0 +1,50 @@
+.task {
+    margin-bottom: 266px;
+    &__container::before {
+        content: url(./../../images/line.svg);
+        position: relative;
+        top: -87.5px;
+        left: -165px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        width: 350px;
+    }
+    &__item:nth-child(3n+1)::after {
+        content: url(./../../images/locate-before.svg);
+        position: relative;
+        top: -300px;
+        margin-right: 0;
+    }
+    &__item:nth-child(3n+2)::after {
+        content: url(./../../images/scooter-before.svg);
+        position: relative;
+        top: -300px;
+        margin-right: 0;
+    }
+    &__item:nth-child(3n+3)::after {
+        content: url(./../../images/ride-before.svg);
+        position: relative;
+        top: -300px;
+        margin-right: 0;
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    &__text {
+        @include small-text;
+        font-style: normal;
+        font-family: 'Space Mono';
+        margin-bottom: 27px;
+    }
+    &__subtext {
+        @include main-text; 
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        color: #939CAA;
+    }
+}

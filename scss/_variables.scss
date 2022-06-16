@@ -1,0 +1,90 @@
+
+// Color variable
+
+$yellow: #FCB72B;
+$dark-navy: #495567;
+$dim-grey: #939CAA;
+$light-grey: #E5ECF4;
+$snow: #F2F5F9;
+$ligh-yellow: #FFF4DF;
+
+// text style
+
+@mixin large-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: $dark-navy;
+}
+
+@mixin big-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: $dark-navy;
+}
+
+@mixin normal-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;    
+    color: $dim-grey;
+}
+
+@mixin regular-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: $dark-navy;
+}
+
+@mixin small-text {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    color: $dark-navy;
+}
+
+@mixin main-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dark-navy;
+}
+
+// btn styles
+
+@mixin btn {
+    border: 2px solid $yellow;
+    background: $yellow;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 200ms linear 0s;
+}
+
+@mixin btn-hover {
+    color: $yellow;
+    background-color: transparent;
+}

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Space Mono', 'Lexend Deca', sans-serif;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+
+.btn {
+    @include btn
+}
+.btn:hover {
+    @include btn-hover
+}

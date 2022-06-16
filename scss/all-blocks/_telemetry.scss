@@ -1,0 +1,23 @@
+.telemetry {
+    &__wrapper {
+        width: 445px;
+    }
+    &__text {
+        width: 445px;
+        @include regular-text;
+        margin-bottom: 24px;
+    }
+    &__subtext {
+        width: 445px;
+        @include main-text;
+        color: $dim-grey;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        padding: 14px 44.5px;
+    }
+    &__img {
+        background-image: url(./../../images/telemetry-img.png);
+        width: 445px;
+    }
+}
