@@ -1,5 +1,6 @@
 .task {
     margin-bottom: 266px;
+    
     &__container::before {
         content: url(./../../images/line.svg);
         position: relative;

@@ -28,6 +28,10 @@
     }
     &__link {
         @include normal-text;
+        transition: all .2s linear 0s;
+    }
+    &__link:hover {
+        color: $yellow;
     }
     &__btn {
         padding: 14px 39px;
