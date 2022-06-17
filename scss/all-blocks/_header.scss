@@ -37,6 +37,9 @@
         padding: 14px 39px;
     }
 }
+.burger__menu {
+    display: none;
+}
 
 // Responsive
 
@@ -81,6 +84,105 @@
         &__btn {
             padding: 14px 39px;
         }
+    }
+    .burger__menu {
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header {
+        position: sticky;
+        position: -webkit-sticky;
+        background-color: #fff;
+        padding: 10px 0px;
+        top: 0;
+        z-index: 2;
         
+        &__container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+            display: block;
+        }
+        &__right-side {
+            width: 198px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__list {
+            width: 249px;
+            display: none;
+        }
+        &__link {
+            @include normal-text;
+            transition: all .2s linear 0s;
+        }
+        &__link:hover {
+            color: $yellow;
+        }
+        &__btn {
+            padding: 14px 39px;
+            display: none;
+        }
+        
+        // =============== Burger Menu ================
+        
+        .burger__menu {
+            display: block;
+            border: 1px solid red;
+        }
+        .st, .nd, .rd {
+            width: 35px;
+            height: 5px;
+            background-color: #FCB72B;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+        .change .st {
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .change .nd {
+            opacity: 0;
+        }
+        .change .rd {
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+        .burger__menu {
+            display: none;
+        }
+        
+
+        .header {
+            position: relative;
+        }
+        .header__nav{
+            position: absolute;
+            display: none;
+        }
+        .burger__menu {
+            display: block;
+            margin-right: 20px;
+        }
+        
+        .header__open .header__nav{
+            display: block;
+            background-color: rgb(0, 255, 229);
+            width: 100%;
+            height: 70vh;
+            margin-top: 1220px;
+            padding-top: 30px;
+        }
+        .header__open ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s linear 0s;
+        }
     }
 }
